@@ -8,7 +8,7 @@ For further details, see the accompanying paper:
 We eatract 152M sentences from StackOverflow questions and answers for pre-training BERT.
 
 # Vocabulary
-We create 82K cased [WordPiece](https://github.com/huggingface/tokenizers) vocabulary:
+We create 80K cased [WordPiece](https://github.com/huggingface/tokenizers) vocabulary with 2K different UNK symbols:
 ```
 import tokenizers
 bwpt = tokenizers.BertWordPieceTokenizer(
