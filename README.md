@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="bertoverflow.png" width="150">
+  <img src="bertoverflow.png" width="300">
   <br />
 </p>
 
