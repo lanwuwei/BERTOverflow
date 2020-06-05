@@ -5,7 +5,7 @@ For further details, see the accompanying paper:
 [Code and Named Entity Recognition in StackOverflow](https://arxiv.org/pdf/2005.01634.pdf)
 
 # Data
-We eatract 152M sentences from StackOverflow questions and answers for pre-training BERT.
+We extract 152M sentences from StackOverflow questions and answers.
 
 # Vocabulary
 We create 80K cased [WordPiece](https://github.com/huggingface/tokenizers) vocabulary with 2K different UNK symbols:
@@ -36,7 +36,7 @@ bwpt.save("./","soft-bert-vocab")
 # TF Records
 We split large file and create TF Records parallelly:
 ```
-split -l 400000 ../../data/giga-ar.all giga-ar- --verbose
+split -l 400000 ../../data/my_data.all my-data- --verbose
 
 ls ../saved_model/softbert/raw_txt_data/ | xargs -n 1 -P 16 -I{} python create_pretraining_data.py --input_file=../saved_model/softbert/raw_txt_data/{} --output_file=../saved_model/softbert/tf_records_data/{}.tfrecord --vocab_file=../saved_model/softbert/vocab.txt --max_seq_length=128 --max_predictions_per_seq=20 --masked_lm_prob=0.15 --random_seed=12345 --dupe_factor=5 --do_whole_word_mask=False --do_lower_case=False
 ```
