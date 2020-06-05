@@ -5,7 +5,7 @@
 
 
 # BERTOverflow
-This repository contains pre-trained BERT on StackOverflow data, which has showed state-of-the-art performance (with CRF layer) on software domain NER. The checkpoints can be downloaded [here](https://drive.google.com/drive/folders/1z4zXexpYU10QNlpcSA_UPfMb2V34zHHO?usp=sharing).
+This repository contains pre-trained BERT on StackOverflow data, which has shown state-of-the-art performance (with CRF layer) on software domain NER. The checkpoints can be downloaded [here](https://drive.google.com/drive/folders/1z4zXexpYU10QNlpcSA_UPfMb2V34zHHO?usp=sharing).
 
 For further details, see the accompanying paper:
 [Code and Named Entity Recognition in StackOverflow](https://arxiv.org/pdf/2005.01634.pdf)
