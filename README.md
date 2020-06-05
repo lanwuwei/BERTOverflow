@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="bertoverflow.png" width="150">
+  <br />
+</p>
+
+
 # BERTOverflow
 This repository contains pre-trained BERT on StackOverflow data, which has showed state-of-the-art performance (with CRF layer) on software domain NER. The checkpoints can be downloaded [here](https://drive.google.com/drive/folders/1z4zXexpYU10QNlpcSA_UPfMb2V34zHHO?usp=sharing).
 
