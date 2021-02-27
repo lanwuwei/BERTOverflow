@@ -10,6 +10,8 @@ This repository contains pre-trained BERT on StackOverflow data, which has shown
 For further details, see the accompanying paper:
 [Code and Named Entity Recognition in StackOverflow](https://arxiv.org/pdf/2005.01634.pdf)
 
+Note: this is just a reference for BERT pre-training with your own data. First, you need to download the original [BERT codebase](https://github.com/google-research/bert), then apply for TPU usage through [TFRC](https://www.tensorflow.org/tfrc), finally follow this readme for BERT pre-training.
+
 # Data
 We extract 152M sentences from StackOverflow questions and answers.
 
